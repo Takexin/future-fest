@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+.main{
+  background-color: #FFFF;
+  width: 100vw;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+}
+
+.img-logo{
+  margin-left: 80px;
+  height:10vh;
+  cursor: pointer;
+  transition: transform 0.3s ease
+}
+.img-logo:hover{
+  transform: scale(1.1);
+}
+
+.main__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.main__logo h1{
+  margin-left: 20px;
+  font-size: 32px;
+  font-family: 'Adamina', Arial, Helvetica, sans-serif;
+  color: #032859;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 58px;
+  font-size: 1.3rem;
+}
+
+#link1, #link2, #link3, #link4{
+  transition: 0.2s;
+}
+
+#link1:hover{
+  scale: 1.02;
+}
+
+#link2:hover{
+  scale: 1.05;
+}
+
+#link3:hover{
+  scale: 1.05;
+}
+
+#link4:hover{
+  scale: 1.05;
+}
+
+.link-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links:last-child{
+  margin-right: 48px;
+}
+
+.links__link{
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+  transition: 0.2s;
+}
+
+.links__link:hover{
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.068);
+}
+
+.links__button{
+  color: #000000;
+  background-color: #ffffff;
+  padding: 8px 26px;
+  border-width: 1.2px;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+
+.links__button:hover{
+  padding: 8px 36px;
+  cursor: pointer;
+}
+
+@media (max-width: 1028px){
+  .links__link{
+    display: none;
+  }
+}
+
+@media(max-width: 585px){
+  .img-logo{
+    margin-left: 5vw;
+    height: 6vh;
+  }
+  .link-group{
+    width: 0;
+  }
+  .links{
+    display: block;
+  }
+
+}
+
+
+@media(max-width: 450px){
+  .main{
+  margin-bottom: 10vw;
+  }
+}

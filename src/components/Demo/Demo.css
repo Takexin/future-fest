@@ -1,0 +1,104 @@
+.main-carousel{
+  width: 100%;
+  height: 120vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 0px 31px 0px rgba(0, 0, 0, 0.384);
+  -moz-box-shadow: inset 0px 0px 31px 0px rgba(0, 0, 0, 0.322);
+  box-shadow: inset 0px 0px 31px 0px rgba(0, 0, 0, 0.05);
+}
+
+.main-carousel h1{
+  font-size: 46px;
+  margin-bottom: 2vh;
+}
+
+.carousel-component{
+  width: 100%;
+}
+
+#strong-mentis{
+  color: rgb(62, 62, 160);
+}
+
+.div-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  gap: 300px;
+}
+
+.div-buttons button{
+  width: 250px;
+  height: 44px;
+  margin-top: 40px;
+  font-size: 20px;
+  border-width: 1px;
+  background-color: white;
+  transition: 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#button-1-div:hover{
+  cursor: pointer;
+  width: 300px;
+}
+
+#button-2-div:hover{
+  cursor: pointer;
+  width: 300px;
+}
+
+#button-2-div{
+  background-color: rgb(45, 45, 121);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 955px){
+  .div-buttons{
+    gap: 10vw;
+  }
+}
+
+@media (max-height: 600px){
+  .div-buttons{
+    margin-bottom: 10vw;
+  }
+}
+
+@media (max-width: 757px){
+  .div-buttons{
+   width: fit-content;
+   padding: 0;
+  }
+
+  .div-buttons button{
+    margin-top: 0;
+  }
+}
+
+@media(max-width: 600px){
+  .div-buttons{
+    justify-content: center;
+    gap: 3vw;  
+  }
+}
+@media(max-width: 530px){
+  .div-buttons button{ /* ajustando tamanho dos botões (overflow) */
+     width: 200px;
+     font-size: 1.2em;
+  }
+  .main-carousel{
+    height: auto;
+  }
+}
+@media (max-width: 430px){
+  .div-buttons button{
+    width: 80%;
+  }
+}

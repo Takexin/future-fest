@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* QUEM SOMOS */
+
+#body-about {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: inset 0px 0px 31px 0px rgba(0, 0, 0, 0.384);
+    -moz-box-shadow: inset 0px 0px 31px 0px rgba(0, 0, 0, 0.322);
+    box-shadow: inset 0px 0px 31px 0px rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+}
+
+.nossotime-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: rgb(44, 44, 110);
+}
+
+.time {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    justify-items: center;
+    margin-top: 5vh;
+    gap: 15px;
+}
+
+.characters {
+    height: 70vh;
+    width: 18vw;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 4px #01010111);
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    justify-items: center; 
+    gap: 7vh;
+    position: relative; 
+    transition: 0.3s;
+}
+
+.characters:hover{
+    scale: 1.05;
+}
+
+.charactersimg {
+    width: 11vw;
+    height: 11vw;
+    margin-top: 5vh;
+    justify-self: center; 
+    align-self: center; 
+    transition: 0.6s;
+}
+
+.charactermedia {
+    display: flex;
+    gap: 1vw;
+    position: absolute;
+    bottom: 20px; 
+    justify-content: center;
+    width: 100%; 
+}
+
+.logos {
+    width: 2.3vw;
+    height: 2.3vw;
+}
+
+.charactername {
+    font-weight: 400;
+}
+
+.characterstxt {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    flex-direction: column;
+    font-family: 'Inter', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    gap: 2vh;
+    transition: 0.6s;
+}
+
+.characterstxt:hover{
+    color: rgb(36, 36, 36);
+}
+
+.apresentacao {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+    text-wrap: pretty;
+    max-height: fit-content;
+}
+
+.logos{
+    transition: 0.2s;
+}
+
+.logos:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1059px){
+    .apresentacao {
+        display: none;
+    }
+
+    .characters {
+        height: 40vh;
+        width: 18vw;
+        gap: 20px;
+    }
+
+    .time{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 20px;
+    }
+
+    #body-about {
+        height: 80vh;
+        width: 100%;
+    }
+    
+  }
+  @media(max-width: 757px){
+    .time{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+
+    #body-about {
+        height: 100vh;
+    }
+
+    .characters {
+        height: 35vh;
+        width: 35vw;
+        gap: 15px;
+    }
+
+    .charactername {
+        font-weight: 600;
+    }
+
+    .logos {
+        width: 2.8vw;
+        height: 2.8vw;
+    }  
+}
+
+@media(max-width: 650px){
+   .characters{
+    width: 40vw;
+   }
+
+   .logos {
+    width: 3.5vw;
+    height: 3.5vw;
+}  
+}
+
+@media(max-width: 600px){
+    .logos {
+     width: 4vw;
+     height: 4vw;
+ }  
+ }
+@media (max-width: 560px){
+    .time{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .characters{
+        width: 100%;
+    }
+    .charactersimg{
+      width: 13vh;
+      height: 13vh;
+    }
+}
+
+
+/* #luisaicons {
+    margin-top: 2.5vh;
+}
+
+#takeshiicons {
+    margin-top: 5.2vh;
+}
+
+#mateusicons {
+    margin-top: 5vh;
+}
+
+.gabrielicons {
+    margin-bottom: 1.4vh;
+} */
+
+/* @keyframes tremer{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  } */
+
+
+
+
